@@ -1,0 +1,76 @@
+/* =========================================================
+   SERTIFIKAT PAGE STYLES (GRID)
+   ========================================================= */
+
+.cert-header {
+  margin-bottom: 2.5rem;
+}
+
+.cert-header h1 {
+  font-size: 2.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.cert-header h1 span {
+  color: var(--primary-purple);
+  text-shadow: 0 0 15px var(--primary-glow);
+}
+
+.cert-header p {
+  color: var(--text-muted);
+  font-size: 1.05rem;
+}
+
+.cert-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.8rem;
+}
+
+.cert-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.cert-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--primary-purple);
+  box-shadow: 0 8px 20px rgba(157, 78, 221, 0.15);
+}
+
+.cert-image {
+  width: 100%;
+  height: 180px;
+  background-color: #130a24;
+  overflow: hidden;
+  position: relative;
+}
+
+.cert-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.cert-card:hover .cert-image img {
+  transform: scale(1.05);
+}
+
+.cert-info {
+  padding: 1.2rem;
+}
+
+.cert-info h3 {
+  font-size: 1.1rem;
+  color: var(--text-main);
+  margin-bottom: 0.4rem;
+}
+
+.cert-info p {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
